@@ -19,10 +19,12 @@ def loading_yolobnas():
 
 def detection_in_img(img_path,yolo_nas):
     # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    image = cv2.imread(image_path)
+    image = cv2.imread(img_path)
 
     # Get the height and width of the image
     height, width, _ = image.shape
+    
+    
     model_predictions  = list(yolo_nas.predict(img_path,conf = 0.5,)._images_prediction_lst)
 
     # model_pred = model_predictions[0].prediction()
