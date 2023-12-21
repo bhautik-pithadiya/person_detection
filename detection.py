@@ -53,4 +53,4 @@ if __name__ == "__main__":
     #     img_path = folderpath + img
     #     detection_in_img(img_path,model)
 
-    detection_in_img*(folderpath + list_img[0],model)
+    detection_in_img(folderpath + list_img[0],model)
