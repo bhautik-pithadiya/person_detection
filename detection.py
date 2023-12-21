@@ -49,6 +49,8 @@ if __name__ == "__main__":
     print('*********************** Model loaded!*******************************')
     # print(list_img)
     # with tqdm
-    for img in tqdm.tqdm(list_img):
-        img_path = folderpath + img
-        detection_in_img(img_path,model)
+    # for img in tqdm.tqdm(list_img):
+    #     img_path = folderpath + img
+    #     detection_in_img(img_path,model)
+
+    detection_in_img*(folderpath + list_img[0],model)
